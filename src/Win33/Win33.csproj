@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82C65031-C4B0-4CDD-B9EA-754A0921E8A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Win33</RootNamespace>
+    <AssemblyName>Win33</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>win33.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gdi32\COLORREF.cs" />
+    <Compile Include="Gdi32\Gdi32Lib.cs" />
+    <Compile Include="MessageLoop.cs" />
+    <Compile Include="Model\CommonControls\TreeView.cs" />
+    <Compile Include="Model\Window.cs" />
+    <Compile Include="tmp\DropboxContextMenu.cs" />
+    <Compile Include="tmp\GlobalHotKey.cs" />
+    <Compile Include="tmp\GlobalHotListener.cs" />
+    <Compile Include="tmp\Hotkey.cs" />
+    <Compile Include="tmp\ScreenCapture.cs" />
+    <Compile Include="tmp\WinApi.cs" />
+    <Compile Include="Model\ClassStyle.cs" />
+    <Compile Include="User32\COPYDATASTRUCT.cs" />
+    <Compile Include="User32\MSG.cs" />
+    <Compile Include="User32\POINT.cs" />
+    <Compile Include="User32\User32Lib.cs" />
+    <Compile Include="Model\WindowStyle.cs" />
+    <Compile Include="Model\WindowStyleEx.cs" />
+    <Compile Include="User32\WNDCLASS.cs" />
+    <Compile Include="WindowMessage.cs" />
+    <Compile Include="WindowProc.cs" />
+    <Compile Include="Windows.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="win33.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

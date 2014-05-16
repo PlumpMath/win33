@@ -1,0 +1,3 @@
+- api to unregister window classes
+- api to destroy windows
+- api to unregister custom messages
