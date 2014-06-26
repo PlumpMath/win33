@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="DevPackage" coreVersion="1.0.0.21">
+   <packageId>Win33</packageId>
+   <platform>net40</platform>
+   <project-url>https://github.com/aloneguid/win33</project-url>
+   <version>1.0.0.0</version>
+   <author>Ivan Gavryliuk</author>
+   <description>Object oriented Win32 bindings</description>
+   <files>
+      <file include="Win33.dll" basedir="src/Win33/bin/Release"/>
+   </files>
+</package>

@@ -1,12 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win33", "Win33\Win33.csproj", "{82C65031-C4B0-4CDD-B9EA-754A0921E8A6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win33.Test", "Win33.Test\Win33.Test.csproj", "{6233AA0D-9197-47C3-9E92-DABE76861AB8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C6A33A25-5958-43A7-907A-5597D8C0C576}"
 	ProjectSection(SolutionItems) = preProject
+		..\pundit.xml = ..\pundit.xml
 		todo.txt = todo.txt
 	EndProjectSection
 EndProject
